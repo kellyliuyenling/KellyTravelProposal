@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AUTH_CONFIG } from './config';
+import { saveLoginRecord } from './LoginTracker';
 
 interface LoginPageProps {
   onLogin: (success: boolean) => void;
@@ -15,6 +16,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
     
     // 检查电子邮件和密码是否匹配配置中的凭据
     const isValidCredential = AUTH_CONFIG.credentials[email] === password;
+
+    // 记录登录尝试（无论成功与否）
+    saveLoginRecord(email, isValidCredential);
 
     if (isValidCredential) {
       // 登录成功，存储到sessionStorage（而非localStorage）

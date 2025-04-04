@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import CustomizedTourProposal from './customized-tour-page';
 import AirportServicesProposal from './airport-products-page';
 import PartnershipProposal from './partnership-page';
+import GlobalTourismVision from './vision-page';
 import LoginPage from './LoginPage';
+import LoginHistoryPage from './LoginHistoryPage';
+import NotificationConfigPage from './NotificationConfigPage';
 import ProtectedRoute from './ProtectedRoute';
 import './index.css';
 
@@ -36,6 +39,12 @@ const App = () => {
         
         <Route path="/" element={
           <ProtectedRoute isAuthenticated={isAuthenticated}>
+            <GlobalTourismVision />
+          </ProtectedRoute>
+        } />
+        
+        <Route path="/customized-tour" element={
+          <ProtectedRoute isAuthenticated={isAuthenticated}>
             <CustomizedTourProposal />
           </ProtectedRoute>
         } />
@@ -49,6 +58,18 @@ const App = () => {
         <Route path="/partnership" element={
           <ProtectedRoute isAuthenticated={isAuthenticated}>
             <PartnershipProposal />
+          </ProtectedRoute>
+        } />
+        
+        <Route path="/login-history" element={
+          <ProtectedRoute isAuthenticated={isAuthenticated} requireAdmin={true}>
+            <LoginHistoryPage />
+          </ProtectedRoute>
+        } />
+        
+        <Route path="/notification-config" element={
+          <ProtectedRoute isAuthenticated={isAuthenticated} requireAdmin={true}>
+            <NotificationConfigPage />
           </ProtectedRoute>
         } />
         
