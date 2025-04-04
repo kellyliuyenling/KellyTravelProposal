@@ -120,28 +120,6 @@ const CustomizedTourProposal = () => {
                   <span><strong>专业知识无需资本：</strong> Kelly提供行业知识，您提供投资</span>
                 </li>
               </ul>
-              
-              <div className="mt-6 pt-6 border-t">
-                <h3 className="text-lg font-medium mb-3 text-blue-800">投资分配</h3>
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-blue-50 rounded p-3">
-                    <h4 className="font-medium">业务扩展</h4>
-                    <p className="text-2xl font-bold">$40,000</p>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3">
-                    <h4 className="font-medium">营销与品牌</h4>
-                    <p className="text-2xl font-bold">$25,000</p>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3">
-                    <h4 className="font-medium">产品开发</h4>
-                    <p className="text-2xl font-bold">$20,000</p>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3">
-                    <h4 className="font-medium">许可与法律</h4>
-                    <p className="text-2xl font-bold">$15,000</p>
-                  </div>
-                </div>
-              </div>
             </div>
             
             {/* 财务模拟器 */}

@@ -209,14 +209,6 @@ const GlobalTourismVision: React.FC = () => {
                     <div className="flex items-start p-3 rounded-lg transition duration-300 hover:bg-blue-50 hover:shadow">
                       <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-700 mr-3 mt-0.5 flex-shrink-0">✓</span>
                       <div>
-                        <strong>财富韧性</strong>
-                        <p className="text-gray-600 text-sm">高净值人群收入和财富对经济下行周期具有更强的抵抗力，旅游支出保持相对稳定</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start p-3 rounded-lg transition duration-300 hover:bg-blue-50 hover:shadow">
-                      <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-700 mr-3 mt-0.5 flex-shrink-0">✓</span>
-                      <div>
                         <strong>高端旅游支出稳步提升</strong>
                         <p className="text-gray-600 text-sm">美国运通(Amex)报告显示，2024年大部分受访者计划增加或维持旅行支出，欧洲有62%的超高净值人士计划增加在豪华住宿和独特旅行体验上的支出</p>
                       </div>

@@ -13,6 +13,7 @@ export const AUTH_CONFIG = {
     'demo@example.com': 'password123',
     'kellyliuyenling@icloud.com': 'admin',
     'Alanphua@virtuepm.vn': 'yourthebest',
+    'williamhsu7111@gmail.com': 'gogogo',
     // 添加更多账户，例如:
     // 'client@company.com': 'securepassword',
   } as Credentials
